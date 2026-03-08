@@ -1031,17 +1031,66 @@ main section.revealed {
   font-style: italic;
 }
 
+@media (max-width: 900px) {
+  .main {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 1.5rem 1rem 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .where-cards {
+    grid-template-columns: 1fr;
+  }
+  .where-card {
+    max-width: 100%;
+  }
+  .guys-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .guys-gift-photo {
+    width: 140px;
+    height: 140px;
+  }
+  .guys-gift-text {
+    font-size: clamp(1.4rem, 4vw, 2rem);
+  }
+}
+
 @media (max-width: 600px) {
   .hero {
-    min-height: 60vh;
+    min-height: 50vh;
+  }
+  .main {
+    padding: 1.25rem 0.75rem 2.5rem;
   }
   .wishes-grid {
     grid-template-columns: 1fr;
   }
   .names-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+  .name-btn__photo {
+    width: 56px;
+    height: 56px;
+  }
+  .guys-cards {
+    grid-template-columns: 1fr;
   }
   .modal-content {
     padding: 1.5rem 1.5rem 2rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .names-grid {
+    grid-template-columns: 1fr;
   }
 }

@@ -348,3 +348,14 @@ body.not-loaded .magical-night-side * {
 .page-girl .magical-night-side--left .flowers {
   transform: translateX(-50%) scale(0.42) scaleX(-1);
 }
+
+/* Мобильная версия: боковые цветы скрыты, контент на всю ширину */
+@media (max-width: 768px) {
+  .magical-night-side {
+    width: 0;
+    overflow: hidden;
+  }
+  .page-girl .magical-night-side {
+    width: 0;
+  }
+}

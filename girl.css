@@ -232,3 +232,38 @@ body.page-girl {
   font-size: 1.3rem;
   color: var(--rose);
 }
+
+/* Мобильная версия страниц девушек */
+@media (max-width: 768px) {
+  .girl-page {
+    padding: 1.5rem 1rem 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .girl-page__title {
+    font-size: clamp(1.5rem, 6vw, 2rem);
+  }
+  .girl-page__photo {
+    width: 140px;
+    height: 140px;
+  }
+  .girl-page__wishes {
+    font-size: 0.95rem;
+  }
+  .girl-page__wishes li {
+    padding-left: 1.25rem;
+  }
+  .girl-page__prediction {
+    padding: 1.25rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .girl-page {
+    padding: 1.25rem 0.75rem 2.5rem;
+  }
+  .girl-page__photo {
+    width: 120px;
+    height: 120px;
+  }
+}

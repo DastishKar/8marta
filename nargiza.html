@@ -446,7 +446,20 @@
     <p class="girl-page__sign">С любовью, пацаны модной точки 💐</p>
   </div>
   <script>
-    (function(){ var a = new Audio('audio_tahir/5579.mp3'); a.volume = 0.15; a.play().catch(function(){}); })();
+    (function(){
+      var base = window.location.pathname.replace(/\/[^/]*$/, '') || '/';
+      var src = (base === '/' ? '' : base) + '/audio_tahir/5579.mp3';
+      var a = new Audio(src);
+      a.volume = 0.15;
+      a.play().catch(function(){});
+      function startOnce(){
+        a.play().catch(function(){});
+        document.body.removeEventListener('click', startOnce);
+        document.body.removeEventListener('touchstart', startOnce, { passive: true });
+      }
+      document.body.addEventListener('click', startOnce);
+      document.body.addEventListener('touchstart', startOnce, { passive: true });
+    })();
   </script>
 </body>
 </html>
