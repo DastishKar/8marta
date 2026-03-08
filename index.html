@@ -637,21 +637,17 @@
   <script>
     (function() {
       var bgMusic = new Audio('audio_tahir/tv_girl.mp3');
-      bgMusic.volume = 0.28;
+      bgMusic.volume = 0.15;
       bgMusic.loop = true;
-      var cameFromGirlPage = document.referrer && /(nargiza|diana|sabina|riza|dana|aliya)\.html/.test(document.referrer);
-      if (cameFromGirlPage) {
+      bgMusic.play().catch(function() {});
+      function startBg(e) {
+        if (e && e.target && e.target.id === 'tahir-gift-btn') return;
         bgMusic.play().catch(function() {});
-      } else {
-        function startBg(e) {
-          if (e && e.target && e.target.id === 'tahir-gift-btn') return;
-          bgMusic.play().catch(function() {});
-          document.body.removeEventListener('click', startBg);
-          document.body.removeEventListener('touchstart', startBg);
-        }
-        document.body.addEventListener('click', startBg);
-        document.body.addEventListener('touchstart', startBg);
+        document.body.removeEventListener('click', startBg);
+        document.body.removeEventListener('touchstart', startBg);
       }
+      document.body.addEventListener('click', startBg);
+      document.body.addEventListener('touchstart', startBg);
     })();
   </script>
   <script>
