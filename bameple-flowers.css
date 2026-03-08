@@ -1,0 +1,138 @@
+/* Цветы по мотивам BamepLe — ровные и симметричные */
+
+.bameple-wrap {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  min-height: 50vh;
+}
+
+.bameple-wrap .flowers {
+  position: relative;
+  width: 100%;
+  max-width: 120vmin;
+  height: 55vmin;
+}
+
+.bameple-wrap .flower {
+  position: absolute;
+  bottom: 8vmin;
+  left: 50%;
+  transform-origin: bottom center;
+  z-index: 10;
+  width: 20vmin;
+  height: 55vmin;
+  margin-left: -10vmin;
+}
+
+.bameple-wrap .flower--1 { left: 18%; margin-left: -10vmin; animation: flower-sway 5s ease-in-out infinite; }
+.bameple-wrap .flower--2 { left: 50%; margin-left: -10vmin; animation: flower-sway 5s ease-in-out infinite 0.5s; }
+.bameple-wrap .flower--3 { left: 82%; margin-left: -10vmin; animation: flower-sway 5s ease-in-out infinite 1s; }
+
+/* Стебель — ровная линия по центру */
+.bameple-wrap .flower__line {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -0.75vmin;
+  width: 1.5vmin;
+  height: 42vmin;
+  background: linear-gradient(to top, #14757a, #39c6d6);
+  border-radius: 2px;
+  box-shadow: inset 0 0 2px rgba(0,0,0,0.2);
+  animation: stem-grow 1.5s ease-out backwards;
+}
+.bameple-wrap .flower--1 .flower__line { animation-delay: 0.2s; height: 48vmin; }
+.bameple-wrap .flower--2 .flower__line { animation-delay: 0.4s; }
+.bameple-wrap .flower--3 .flower__line { animation-delay: 0.6s; }
+
+@keyframes stem-grow {
+  from { transform: scaleY(0); transform-origin: bottom; }
+  to { transform: scaleY(1); }
+}
+
+/* Бутон — контейнер строго над стеблем */
+.bameple-wrap .flower__leafs {
+  position: absolute;
+  bottom: 40vmin;
+  left: 50%;
+  width: 16vmin;
+  height: 16vmin;
+  margin-left: -8vmin;
+  animation: bloom-pop 1.2s ease-out backwards;
+}
+.bameple-wrap .flower--1 .flower__leafs { bottom: 45vmin; margin-left: -8vmin; animation-delay: 0.6s; }
+.bameple-wrap .flower--2 .flower__leafs { bottom: 40vmin; animation-delay: 0.8s; }
+.bameple-wrap .flower--3 .flower__leafs { bottom: 40vmin; animation-delay: 1s; }
+
+@keyframes bloom-pop {
+  from { transform: scale(0); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* Лепестки — ровный круг, каждый по 60° */
+.bameple-wrap .flower__leaf {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 6vmin;
+  height: 9vmin;
+  margin-left: -3vmin;
+  margin-top: -9vmin;
+  border-radius: 50% 50% 45% 55% / 40% 40% 60% 60%;
+  background: linear-gradient(to top, #54b8aa, #a7ffee);
+  box-shadow: inset 0 0 1.5vmin rgba(255,255,255,0.4);
+  transform-origin: 50% 100%;
+  opacity: 0.95;
+}
+.bameple-wrap .flower__leaf--1 { transform: rotate(0deg); }
+.bameple-wrap .flower__leaf--2 { transform: rotate(60deg); }
+.bameple-wrap .flower__leaf--3 { transform: rotate(120deg); }
+.bameple-wrap .flower__leaf--4 { transform: rotate(180deg); }
+.bameple-wrap .flower__leaf--5 { transform: rotate(240deg); }
+.bameple-wrap .flower__leaf--6 { transform: rotate(300deg); }
+
+/* Серединка */
+.bameple-wrap .flower__white-circle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 4vmin;
+  height: 4vmin;
+  margin-left: -2vmin;
+  margin-top: -2vmin;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #fffef5, #e8c547);
+  box-shadow: 0 0 1vmin rgba(232, 197, 71, 0.5);
+  z-index: 2;
+}
+
+.bameple-wrap .flower__leafs::after {
+  display: none;
+}
+
+/* Лёгкое покачивание */
+@keyframes flower-sway {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(-2deg); }
+}
+.bameple-wrap .flower--2 { animation-name: flower-sway-2; }
+@keyframes flower-sway-2 {
+  0%, 100% { transform: rotate(2deg); }
+  50% { transform: rotate(-1deg); }
+}
+.bameple-wrap .flower--3 { animation-name: flower-sway-3; }
+@keyframes flower-sway-3 {
+  0%, 100% { transform: rotate(-2deg); }
+  50% { transform: rotate(1deg); }
+}
+
+body.bameple-not-loaded .bameple-wrap * {
+  animation-play-state: paused !important;
+}

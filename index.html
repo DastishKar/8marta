@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>С 8 Марта! 💐</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="girl.css">
+  <link rel="stylesheet" href="magical-night-side.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Marck+Script&display=swap" rel="stylesheet">
+</head>
+<body class="bameple-not-loaded">
+  <div class="confetti-container" id="confetti"></div>
+
+  <!-- Единый фон Magical Night на всю страницу -->
+  <div class="magical-night-bg" aria-hidden="true"></div>
+
+  <!-- Цветы справа -->
+  <div class="magical-night-side magical-night-side--right" aria-hidden="true">
+    <div class="flowers">
+      <div class="flower flower--1">
+        <div class="flower__leafs flower__leafs--1">
+          <div class="flower__leaf flower__leaf--1"></div>
+          <div class="flower__leaf flower__leaf--2"></div>
+          <div class="flower__leaf flower__leaf--3"></div>
+          <div class="flower__leaf flower__leaf--4"></div>
+          <div class="flower__white-circle"></div>
+          <div class="flower__light flower__light--1"></div>
+          <div class="flower__light flower__light--2"></div>
+          <div class="flower__light flower__light--3"></div>
+          <div class="flower__light flower__light--4"></div>
+          <div class="flower__light flower__light--5"></div>
+          <div class="flower__light flower__light--6"></div>
+          <div class="flower__light flower__light--7"></div>
+          <div class="flower__light flower__light--8"></div>
+        </div>
+        <div class="flower__line"></div>
+      </div>
+      <div class="flower flower--2">
+        <div class="flower__leafs flower__leafs--2">
+          <div class="flower__leaf flower__leaf--1"></div>
+          <div class="flower__leaf flower__leaf--2"></div>
+          <div class="flower__leaf flower__leaf--3"></div>
+          <div class="flower__leaf flower__leaf--4"></div>
+          <div class="flower__white-circle"></div>
+          <div class="flower__light flower__light--1"></div>
+          <div class="flower__light flower__light--2"></div>
+          <div class="flower__light flower__light--3"></div>
+          <div class="flower__light flower__light--4"></div>
+          <div class="flower__light flower__light--5"></div>
+          <div class="flower__light flower__light--6"></div>
+          <div class="flower__light flower__light--7"></div>
+          <div class="flower__light flower__light--8"></div>
+        </div>
+        <div class="flower__line"></div>
+      </div>
+      <div class="flower flower--3">
+        <div class="flower__leafs flower__leafs--3">
+          <div class="flower__leaf flower__leaf--1"></div>
+          <div class="flower__leaf flower__leaf--2"></div>
+          <div class="flower__leaf flower__leaf--3"></div>
+          <div class="flower__leaf flower__leaf--4"></div>
+          <div class="flower__white-circle"></div>
+          <div class="flower__light flower__light--1"></div>
+          <div class="flower__light flower__light--2"></div>
+          <div class="flower__light flower__light--3"></div>
+          <div class="flower__light flower__light--4"></div>
+          <div class="flower__light flower__light--5"></div>
+          <div class="flower__light flower__light--6"></div>
+          <div class="flower__light flower__light--7"></div>
+          <div class="flower__light flower__light--8"></div>
+        </div>
+        <div class="flower__line"></div>
+      </div>
+      <div class="flower flower--4">
+        <div class="flower__leafs flower__leafs--4">
+          <div class="flower__leaf flower__leaf--1"></div>
+          <div class="flower__leaf flower__leaf--2"></div>
+          <div class="flower__leaf flower__leaf--3"></div>
+          <div class="flower__leaf flower__leaf--4"></div>
+          <div class="flower__white-circle"></div>
+          <div class="flower__light flower__light--1"></div>
+          <div class="flower__light flower__light--2"></div>
+          <div class="flower__light flower__light--3"></div>
+          <div class="flower__light flower__light--4"></div>
+          <div class="flower__light flower__light--5"></div>
+          <div class="flower__light flower__light--6"></div>
+          <div class="flower__light flower__light--7"></div>
+          <div class="flower__light flower__light--8"></div>
+        </div>
+        <div class="flower__line"></div>
+      </div>
+      <div class="flower flower--5">
+        <div class="flower__leafs flower__leafs--5">
+          <div class="flower__leaf flower__leaf--1"></div>
+          <div class="flower__leaf flower__leaf--2"></div>
+          <div class="flower__leaf flower__leaf--3"></div>
+          <div class="flower__leaf flower__leaf--4"></div>
+          <div class="flower__white-circle"></div>
+          <div class="flower__light flower__light--1"></div>
+          <div class="flower__light flower__light--2"></div>
+          <div class="flower__light flower__light--3"></div>
+          <div class="flower__light flower__light--4"></div>
+          <div class="flower__light flower__light--5"></div>
+          <div class="flower__light flower__light--6"></div>
+          <div class="flower__light flower__light--7"></div>
+          <div class="flower__light flower__light--8"></div>
+        </div>
+        <div class="flower__line"></div>
+      </div>
+      <div class="flower flower--6">
+        <div class="flower__leafs flower__leafs--6">
+          <div class="flower__leaf flower__leaf--1"></div>
+          <div class="flower__leaf flower__leaf--2"></div>
+          <div class="flower__leaf flower__leaf--3"></div>
+          <div class="flower__leaf flower__leaf--4"></div>
+          <div class="flower__white-circle"></div>
+          <div class="flower__light flower__light--1"></div>
+          <div class="flower__light flower__light--2"></div>
+          <div class="flower__light flower__light--3"></div>
+          <div class="flower__light flower__light--4"></div>
+          <div class="flower__light flower__light--5"></div>
+          <div class="flower__light flower__light--6"></div>
+          <div class="flower__light flower__light--7"></div>
+          <div class="flower__light flower__light--8"></div>
+        </div>
+        <div class="flower__line"></div>
+      </div>
+      <div class="flower flower--7">
+        <div class="flower__leafs flower__leafs--7">
+          <div class="flower__leaf flower__leaf--1"></div>
+          <div class="flower__leaf flower__leaf--2"></div>
+          <div class="flower__leaf flower__leaf--3"></div>
+          <div class="flower__leaf flower__leaf--4"></div>
+          <div class="flower__white-circle"></div>
+          <div class="flower__light flower__light--1"></div>
+          <div class="flower__light flower__light--2"></div>
+          <div class="flower__light flower__light--3"></div>
+          <div class="flower__light flower__light--4"></div>
+          <div class="flower__light flower__light--5"></div>
+          <div class="flower__light flower__light--6"></div>
+          <div class="flower__light flower__light--7"></div>
+          <div class="flower__light flower__light--8"></div>
+        </div>
+        <div class="flower__line"></div>
+      </div>
+      <div class="flower flower--8">
+        <div class="flower__leafs flower__leafs--8">
+          <div class="flower__leaf flower__leaf--1"></div>
+          <div class="flower__leaf flower__leaf--2"></div>
+          <div class="flower__leaf flower__leaf--3"></div>
+          <div class="flower__leaf flower__leaf--4"></div>
+          <div class="flower__white-circle"></div>
+          <div class="flower__light flower__light--1"></div>
+          <div class="flower__light flower__light--2"></div>
+          <div class="flower__light flower__light--3"></div>
+          <div class="flower__light flower__light--4"></div>
+          <div class="flower__light flower__light--5"></div>
+          <div class="flower__light flower__light--6"></div>
+          <div class="flower__light flower__light--7"></div>
+          <div class="flower__light flower__light--8"></div>
+        </div>
+        <div class="flower__line"></div>
+      </div>
+      <div class="flower flower--9">
+        <div class="flower__leafs flower__leafs--9">
+          <div class="flower__leaf flower__leaf--1"></div>
+          <div class="flower__leaf flower__leaf--2"></div>
+          <div class="flower__leaf flower__leaf--3"></div>
+          <div class="flower__leaf flower__leaf--4"></div>
+          <div class="flower__white-circle"></div>
+          <div class="flower__light flower__light--1"></div>
+          <div class="flower__light flower__light--2"></div>
+          <div class="flower__light flower__light--3"></div>
+          <div class="flower__light flower__light--4"></div>
+          <div class="flower__light flower__light--5"></div>
+          <div class="flower__light flower__light--6"></div>
+          <div class="flower__light flower__light--7"></div>
+          <div class="flower__light flower__light--8"></div>
+        </div>
+        <div class="flower__line"></div>
+      </div>
+      <div class="flower flower--10">
+        <div class="flower__leafs flower__leafs--10">
+          <div class="flower__leaf flower__leaf--1"></div>
+          <div class="flower__leaf flower__leaf--2"></div>
+          <div class="flower__leaf flower__leaf--3"></div>
+          <div class="flower__leaf flower__leaf--4"></div>
+          <div class="flower__white-circle"></div>
+          <div class="flower__light flower__light--1"></div>
+          <div class="flower__light flower__light--2"></div>
+          <div class="flower__light flower__light--3"></div>
+          <div class="flower__light flower__light--4"></div>
+          <div class="flower__light flower__light--5"></div>
+          <div class="flower__light flower__light--6"></div>
+          <div class="flower__light flower__light--7"></div>
+          <div class="flower__light flower__light--8"></div>
+        </div>
+        <div class="flower__line"></div>
+      </div>
+      <div class="flower flower--11">
+        <div class="flower__leafs flower__leafs--11">
+          <div class="flower__leaf flower__leaf--1"></div>
+          <div class="flower__leaf flower__leaf--2"></div>
+          <div class="flower__leaf flower__leaf--3"></div>
+          <div class="flower__leaf flower__leaf--4"></div>
+          <div class="flower__white-circle"></div>
+          <div class="flower__light flower__light--1"></div>
+          <div class="flower__light flower__light--2"></div>
+          <div class="flower__light flower__light--3"></div>
+          <div class="flower__light flower__light--4"></div>
+          <div class="flower__light flower__light--5"></div>
+          <div class="flower__light flower__light--6"></div>
+          <div class="flower__light flower__light--7"></div>
+          <div class="flower__light flower__light--8"></div>
+        </div>
+        <div class="flower__line"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Цветы слева (зеркально) -->
+  <div class="magical-night-side magical-night-side--left" aria-hidden="true">
+    <div class="flowers">
+      <div class="flower flower--1">
+        <div class="flower__leafs flower__leafs--1">
+          <div class="flower__leaf flower__leaf--1"></div>
+          <div class="flower__leaf flower__leaf--2"></div>
+          <div class="flower__leaf flower__leaf--3"></div>
+          <div class="flower__leaf flower__leaf--4"></div>
+          <div class="flower__white-circle"></div>
+          <div class="flower__light flower__light--1"></div>
+          <div class="flower__light flower__light--2"></div>
+          <div class="flower__light flower__light--3"></div>
+          <div class="flower__light flower__light--4"></div>
+          <div class="flower__light flower__light--5"></div>
+          <div class="flower__light flower__light--6"></div>
+          <div class="flower__light flower__light--7"></div>
+          <div class="flower__light flower__light--8"></div>
+        </div>
+        <div class="flower__line"></div>
+      </div>
+      <div class="flower flower--2">
+        <div class="flower__leafs flower__leafs--2">
+          <div class="flower__leaf flower__leaf--1"></div>
+          <div class="flower__leaf flower__leaf--2"></div>
+          <div class="flower__leaf flower__leaf--3"></div>
+          <div class="flower__leaf flower__leaf--4"></div>
+          <div class="flower__white-circle"></div>
+          <div class="flower__light flower__light--1"></div>
+          <div class="flower__light flower__light--2"></div>
+          <div class="flower__light flower__light--3"></div>
+          <div class="flower__light flower__light--4"></div>
+          <div class="flower__light flower__light--5"></div>
+          <div class="flower__light flower__light--6"></div>
+          <div class="flower__light flower__light--7"></div>
+          <div class="flower__light flower__light--8"></div>
+        </div>
+        <div class="flower__line"></div>
+      </div>
+      <div class="flower flower--3">
+        <div class="flower__leafs flower__leafs--3">
+          <div class="flower__leaf flower__leaf--1"></div>
+          <div class="flower__leaf flower__leaf--2"></div>
+          <div class="flower__leaf flower__leaf--3"></div>
+          <div class="flower__leaf flower__leaf--4"></div>
+          <div class="flower__white-circle"></div>
+          <div class="flower__light flower__light--1"></div>
+          <div class="flower__light flower__light--2"></div>
+          <div class="flower__light flower__light--3"></div>
+          <div class="flower__light flower__light--4"></div>
+          <div class="flower__light flower__light--5"></div>
+          <div class="flower__light flower__light--6"></div>
+          <div class="flower__light flower__light--7"></div>
+          <div class="flower__light flower__light--8"></div>
+        </div>
+        <div class="flower__line"></div>
+      </div>
+      <div class="flower flower--4">
+        <div class="flower__leafs flower__leafs--4">
+          <div class="flower__leaf flower__leaf--1"></div>
+          <div class="flower__leaf flower__leaf--2"></div>
+          <div class="flower__leaf flower__leaf--3"></div>
+          <div class="flower__leaf flower__leaf--4"></div>
+          <div class="flower__white-circle"></div>
+          <div class="flower__light flower__light--1"></div>
+          <div class="flower__light flower__light--2"></div>
+          <div class="flower__light flower__light--3"></div>
+          <div class="flower__light flower__light--4"></div>
+          <div class="flower__light flower__light--5"></div>
+          <div class="flower__light flower__light--6"></div>
+          <div class="flower__light flower__light--7"></div>
+          <div class="flower__light flower__light--8"></div>
+        </div>
+        <div class="flower__line"></div>
+      </div>
+      <div class="flower flower--5">
+        <div class="flower__leafs flower__leafs--5">
+          <div class="flower__leaf flower__leaf--1"></div>
+          <div class="flower__leaf flower__leaf--2"></div>
+          <div class="flower__leaf flower__leaf--3"></div>
+          <div class="flower__leaf flower__leaf--4"></div>
+          <div class="flower__white-circle"></div>
+          <div class="flower__light flower__light--1"></div>
+          <div class="flower__light flower__light--2"></div>
+          <div class="flower__light flower__light--3"></div>
+          <div class="flower__light flower__light--4"></div>
+          <div class="flower__light flower__light--5"></div>
+          <div class="flower__light flower__light--6"></div>
+          <div class="flower__light flower__light--7"></div>
+          <div class="flower__light flower__light--8"></div>
+        </div>
+        <div class="flower__line"></div>
+      </div>
+      <div class="flower flower--6">
+        <div class="flower__leafs flower__leafs--6">
+          <div class="flower__leaf flower__leaf--1"></div>
+          <div class="flower__leaf flower__leaf--2"></div>
+          <div class="flower__leaf flower__leaf--3"></div>
+          <div class="flower__leaf flower__leaf--4"></div>
+          <div class="flower__white-circle"></div>
+          <div class="flower__light flower__light--1"></div>
+          <div class="flower__light flower__light--2"></div>
+          <div class="flower__light flower__light--3"></div>
+          <div class="flower__light flower__light--4"></div>
+          <div class="flower__light flower__light--5"></div>
+          <div class="flower__light flower__light--6"></div>
+          <div class="flower__light flower__light--7"></div>
+          <div class="flower__light flower__light--8"></div>
+        </div>
+        <div class="flower__line"></div>
+      </div>
+      <div class="flower flower--7">
+        <div class="flower__leafs flower__leafs--7">
+          <div class="flower__leaf flower__leaf--1"></div>
+          <div class="flower__leaf flower__leaf--2"></div>
+          <div class="flower__leaf flower__leaf--3"></div>
+          <div class="flower__leaf flower__leaf--4"></div>
+          <div class="flower__white-circle"></div>
+          <div class="flower__light flower__light--1"></div>
+          <div class="flower__light flower__light--2"></div>
+          <div class="flower__light flower__light--3"></div>
+          <div class="flower__light flower__light--4"></div>
+          <div class="flower__light flower__light--5"></div>
+          <div class="flower__light flower__light--6"></div>
+          <div class="flower__light flower__light--7"></div>
+          <div class="flower__light flower__light--8"></div>
+        </div>
+        <div class="flower__line"></div>
+      </div>
+      <div class="flower flower--8">
+        <div class="flower__leafs flower__leafs--8">
+          <div class="flower__leaf flower__leaf--1"></div>
+          <div class="flower__leaf flower__leaf--2"></div>
+          <div class="flower__leaf flower__leaf--3"></div>
+          <div class="flower__leaf flower__leaf--4"></div>
+          <div class="flower__white-circle"></div>
+          <div class="flower__light flower__light--1"></div>
+          <div class="flower__light flower__light--2"></div>
+          <div class="flower__light flower__light--3"></div>
+          <div class="flower__light flower__light--4"></div>
+          <div class="flower__light flower__light--5"></div>
+          <div class="flower__light flower__light--6"></div>
+          <div class="flower__light flower__light--7"></div>
+          <div class="flower__light flower__light--8"></div>
+        </div>
+        <div class="flower__line"></div>
+      </div>
+      <div class="flower flower--9">
+        <div class="flower__leafs flower__leafs--9">
+          <div class="flower__leaf flower__leaf--1"></div>
+          <div class="flower__leaf flower__leaf--2"></div>
+          <div class="flower__leaf flower__leaf--3"></div>
+          <div class="flower__leaf flower__leaf--4"></div>
+          <div class="flower__white-circle"></div>
+          <div class="flower__light flower__light--1"></div>
+          <div class="flower__light flower__light--2"></div>
+          <div class="flower__light flower__light--3"></div>
+          <div class="flower__light flower__light--4"></div>
+          <div class="flower__light flower__light--5"></div>
+          <div class="flower__light flower__light--6"></div>
+          <div class="flower__light flower__light--7"></div>
+          <div class="flower__light flower__light--8"></div>
+        </div>
+        <div class="flower__line"></div>
+      </div>
+      <div class="flower flower--10">
+        <div class="flower__leafs flower__leafs--10">
+          <div class="flower__leaf flower__leaf--1"></div>
+          <div class="flower__leaf flower__leaf--2"></div>
+          <div class="flower__leaf flower__leaf--3"></div>
+          <div class="flower__leaf flower__leaf--4"></div>
+          <div class="flower__white-circle"></div>
+          <div class="flower__light flower__light--1"></div>
+          <div class="flower__light flower__light--2"></div>
+          <div class="flower__light flower__light--3"></div>
+          <div class="flower__light flower__light--4"></div>
+          <div class="flower__light flower__light--5"></div>
+          <div class="flower__light flower__light--6"></div>
+          <div class="flower__light flower__light--7"></div>
+          <div class="flower__light flower__light--8"></div>
+        </div>
+        <div class="flower__line"></div>
+      </div>
+      <div class="flower flower--11">
+        <div class="flower__leafs flower__leafs--11">
+          <div class="flower__leaf flower__leaf--1"></div>
+          <div class="flower__leaf flower__leaf--2"></div>
+          <div class="flower__leaf flower__leaf--3"></div>
+          <div class="flower__leaf flower__leaf--4"></div>
+          <div class="flower__white-circle"></div>
+          <div class="flower__light flower__light--1"></div>
+          <div class="flower__light flower__light--2"></div>
+          <div class="flower__light flower__light--3"></div>
+          <div class="flower__light flower__light--4"></div>
+          <div class="flower__light flower__light--5"></div>
+          <div class="flower__light flower__light--6"></div>
+          <div class="flower__light flower__light--7"></div>
+          <div class="flower__light flower__light--8"></div>
+        </div>
+        <div class="flower__line"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CSS hearts -->
+  <div class="hearts-bg" aria-hidden="true">
+    <div class="heart-css heart-css--1"></div>
+    <div class="heart-css heart-css--2"></div>
+    <div class="heart-css heart-css--3"></div>
+    <div class="heart-css heart-css--4"></div>
+    <div class="heart-css heart-css--5"></div>
+    <div class="heart-css heart-css--6"></div>
+  </div>
+
+  <main class="main">
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="title animate-fade-in">
+          <span class="title-line">С 8 Марта,</span>
+          <span class="title-line accent">дорогие девочки модной точки!</span>
+        </h1>
+        <p class="subtitle animate-fade-in-delay">
+          Пусть весна принесёт вам улыбки, счастье и исполнение желаний 💕
+        </p>
+        <div class="hearts-inline">
+          <span class="heart-emoji" aria-hidden="true">❤️</span>
+          <span class="heart-emoji" aria-hidden="true">💖</span>
+          <span class="heart-emoji" aria-hidden="true">💗</span>
+          <span class="heart-emoji" aria-hidden="true">💕</span>
+          <span class="heart-emoji" aria-hidden="true">🌸</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="names-section">
+      <h2 class="names-title">Выберите, кому открыть поздравление 💐</h2>
+      <p class="names-hint">Нажмите на имя — откроется отдельная страница с поздравлением и прогнозом</p>
+      <div class="names-grid">
+        <a href="aliya.html" class="name-btn" style="--i: 0">
+          <span class="name-btn__photo"><img src="photo/aliya.jpg" alt="" loading="lazy"></span>
+          <span class="name-btn__label">Алия</span>
+        </a>
+        <a href="dana.html" class="name-btn" style="--i: 1">
+          <span class="name-btn__photo"><img src="photo/dana.jpg" alt="" loading="lazy"></span>
+          <span class="name-btn__label">Дана</span>
+        </a>
+        <a href="diana.html" class="name-btn" style="--i: 2">
+          <span class="name-btn__photo"><img src="photo/diana.jpg" alt="" loading="lazy"></span>
+          <span class="name-btn__label">Диана</span>
+        </a>
+        <a href="nargiza.html" class="name-btn" style="--i: 3">
+          <span class="name-btn__photo"><img src="photo/nargiza.jpg" alt="" loading="lazy"></span>
+          <span class="name-btn__label">Наргиза</span>
+        </a>
+        <a href="riza.html" class="name-btn" style="--i: 4">
+          <span class="name-btn__photo"><img src="photo/riza.jpg" alt="" loading="lazy"></span>
+          <span class="name-btn__label">Риза</span>
+        </a>
+        <a href="sabina.html" class="name-btn" style="--i: 5">
+          <span class="name-btn__photo"><img src="photo/sabina.jpg" alt="" loading="lazy"></span>
+          <span class="name-btn__label">Сабина</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="where-section" id="where">
+      <h2 class="where-title">🌟 Где вы сейчас</h2>
+      <p class="where-intro">После университета каждая пошла своим путём — вы продолжаете развиваться и строить карьеру. Сейчас все в Астане, но у каждой свой путь и своя история.</p>
+      <div class="where-cards">
+        <article class="where-card" data-name="Алия">
+          <div class="where-card__photo"><img src="photo/aliya.jpg" alt="Алия" loading="lazy"></div>
+          <span class="where-card__badge" title="Магистратура">🎓</span>
+          <h3 class="where-card__name">Алия</h3>
+          <p class="where-card__company">Магистратура ЕНУ</p>
+          <p class="where-card__desc">Учится в магистратуре ЕНУ по информационной безопасности.</p>
+          <a href="https://instagram.com/aliyarystanovna" target="_blank" rel="noopener noreferrer" class="where-card__link">@aliyarystanovna</a>
+          <div class="where-card__wish-wrap">
+            <button type="button" class="where-card__wish-btn">Открыть поздравление</button>
+            <p class="where-card__wish-text" hidden>Алия, с 8 Марта! Успехов в магистратуре и в информационной безопасности 🎓🌟</p>
+          </div>
+        </article>
+        <article class="where-card" data-name="Дана">
+          <div class="where-card__photo"><img src="photo/dana.jpg" alt="Дана" loading="lazy"></div>
+          <span class="where-card__badge" title="Творческая профессия">📷</span>
+          <h3 class="where-card__name">Дана</h3>
+          <p class="where-card__company">Мобилограф</p>
+          <p class="where-card__desc">Творческий человек группы — создаёт фото и видео контент.</p>
+          <a href="https://instagram.com/nuriyevad_" target="_blank" rel="noopener noreferrer" class="where-card__link">@nuriyevad_</a>
+          <div class="where-card__wish-wrap">
+            <button type="button" class="where-card__wish-btn">Открыть поздравление</button>
+            <p class="where-card__wish-text" hidden>Дана, с 8 Марта! Пусть каждый кадр приносит радость и вдохновение 📸✨</p>
+          </div>
+        </article>
+        <article class="where-card" data-name="Диана">
+          <div class="where-card__photo"><img src="photo/diana.jpg" alt="Диана" loading="lazy"></div>
+          <span class="where-card__badge" title="IT-сфера">🖥️</span>
+          <h3 class="where-card__name">Диана</h3>
+          <p class="where-card__company">Hardcode</p>
+          <p class="where-card__desc">Занимается IT и продолжает расти как специалист.</p>
+          <a href="https://instagram.com/_valeryevnad" target="_blank" rel="noopener noreferrer" class="where-card__link">@_valeryevnad</a>
+          <div class="where-card__wish-wrap">
+            <button type="button" class="where-card__wish-btn">Открыть поздравление</button>
+            <p class="where-card__wish-text" hidden>Диана, поздравляем с 8 Марта! Пусть в Hardcode тебя ждут только интересные задачи и рост 🚀</p>
+          </div>
+        </article>
+        <article class="where-card" data-name="Наргиза">
+          <div class="where-card__photo"><img src="photo/nargiza.jpg" alt="Наргиза" loading="lazy"></div>
+          <span class="where-card__badge" title="Технологии">🖥️</span>
+          <h3 class="where-card__name">Наргиза</h3>
+          <p class="where-card__company">Kazdream</p>
+          <p class="where-card__desc">Развивается в технологической сфере.</p>
+          <a href="https://instagram.com/gds_n" target="_blank" rel="noopener noreferrer" class="where-card__link">@gds_n</a>
+          <div class="where-card__wish-wrap">
+            <button type="button" class="where-card__wish-btn">Открыть поздравление</button>
+            <p class="where-card__wish-text" hidden>Наргиза, с 8 Марта! Успехов в Kazdream и новых высот в карьере 💕</p>
+          </div>
+        </article>
+        <article class="where-card" data-name="Риза">
+          <div class="where-card__photo"><img src="photo/riza.jpg" alt="Риза" loading="lazy"></div>
+          <span class="where-card__badge" title="Карьера в компании">💼</span>
+          <h3 class="where-card__name">Риза</h3>
+          <p class="where-card__company">Antirash</p>
+          <p class="where-card__desc">Уверенно развивается в своей сфере и строит профессиональный путь.</p>
+          <a href="https://instagram.com/_irizka_zh_" target="_blank" rel="noopener noreferrer" class="where-card__link">@_irizka_zh_</a>
+          <div class="where-card__wish-wrap">
+            <button type="button" class="where-card__wish-btn">Открыть поздравление</button>
+            <p class="where-card__wish-text" hidden>Риза, с 8 Марта! Желаем успехов в Antirash и реализации всех целей 🌸</p>
+          </div>
+        </article>
+        <article class="where-card" data-name="Сабина">
+          <div class="where-card__photo"><img src="photo/sabina.jpg" alt="Сабина" loading="lazy"></div>
+          <span class="where-card__badge" title="Карьера">💼</span>
+          <h3 class="where-card__name">Сабина</h3>
+          <p class="where-card__company">Кумколь</p>
+          <p class="where-card__desc">Строит карьеру в своей области.</p>
+          <a href="https://instagram.com/sabikosha_19" target="_blank" rel="noopener noreferrer" class="where-card__link">@sabikosha_19</a>
+          <div class="where-card__wish-wrap">
+            <button type="button" class="where-card__wish-btn">Открыть поздравление</button>
+            <p class="where-card__wish-text" hidden>Сабина, поздравляем с 8 Марта! Пусть в компании Кумколь тебя ждут только победы 🌷</p>
+          </div>
+        </article>
+      </div>
+      <p class="where-footer">📍 Сейчас мы все в Астане — у каждой свой путь и своя история.</p>
+    </section>
+
+    <section class="wishes">
+      <h2 class="wishes-title">Пожелания для вас</h2>
+      <div class="wishes-grid">
+        <div class="wish-card" style="--delay: 0">
+          <span class="wish-icon">✨</span>
+          <p>Успехов в учёбе и во всех начинаниях!</p>
+        </div>
+        <div class="wish-card" style="--delay: 0.1">
+          <span class="wish-icon">🌷</span>
+          <p>Красоты, нежности и весеннего настроения!</p>
+        </div>
+        <div class="wish-card" style="--delay: 0.2">
+          <span class="wish-icon">💪</span>
+          <p>Силы духа и уверенности в себе!</p>
+        </div>
+        <div class="wish-card" style="--delay: 0.3">
+          <span class="wish-icon">🌟</span>
+          <p>Ярких впечатлений и незабываемых моментов!</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="guys-section" id="guys">
+      <h2 class="guys-title">Поздравления от пацанов</h2>
+      <p class="guys-intro">Ребята передают вам привет и поздравления с 8 Марта!</p>
+      <div class="guys-cards">
+        <article class="guy-card">
+          <div class="guy-card__photo"><img src="boys_photo/azamat.jpg" alt="Азамат" loading="lazy"></div>
+          <h3 class="guy-card__name">Азамат</h3>
+          <p class="guy-card__text">С 8 Марта! Здоровья, счастья и исполнения желаний!</p>
+        </article>
+        <article class="guy-card">
+          <div class="guy-card__photo"><img src="boys_photo/ahmet.jpg" alt="Ахмет" loading="lazy"></div>
+          <h3 class="guy-card__name">Ахмет</h3>
+          <p class="guy-card__text">Поздравляю с 8 Марта! Успехов и отличного настроения!</p>
+        </article>
+        <article class="guy-card">
+          <div class="guy-card__photo"><img src="boys_photo/dastan.jpg" alt="Дастан" loading="lazy"></div>
+          <h3 class="guy-card__name">Дастан</h3>
+          <p class="guy-card__text">С 8 Марта! Желаю счастья, любви и всего самого хорошего!</p>
+        </article>
+        <article class="guy-card">
+          <div class="guy-card__photo"><img src="boys_photo/erbolat.jpg" alt="Ерболат" loading="lazy"></div>
+          <h3 class="guy-card__name">Ерболат</h3>
+          <p class="guy-card__text">С праздником весны! Здоровья, радости и исполнения мечтаний!</p>
+        </article>
+        <article class="guy-card">
+          <div class="guy-card__photo"><img src="boys_photo/islam.jpg" alt="Ислам" loading="lazy"></div>
+          <h3 class="guy-card__name">Ислам</h3>
+          <p class="guy-card__text">С 8 Марта! Красоты, улыбок и всего самого лучшего!</p>
+        </article>
+      </div>
+      <div class="guys-gift-wrap">
+        <button type="button" class="guys-gift-btn" id="tahir-gift-btn">Самый лучший подарок</button>
+        <div class="guys-gift-reveal" id="tahir-gift-reveal" hidden>
+          <img src="boys_photo/tahir.jpg" alt="Тахир" class="guys-gift-photo" loading="lazy">
+          <p class="guys-gift-text">Цветочки от Тахирчика</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer-message">
+      <p class="signature">С любовью, пацаны модной точки 💐</p>
+    </section>
+  </main>
+
+  <script type="module" src="dist/main.js"></script>
+  <script>
+    (function() {
+      var bgMusic = new Audio('audio_tahir/tv_girl.mp3');
+      bgMusic.volume = 0.45;
+      bgMusic.loop = true;
+      bgMusic.play().catch(function() {});
+      function startBg(e) {
+        if (e && e.target && e.target.id === 'tahir-gift-btn') return;
+        bgMusic.play().catch(function() {});
+        document.body.removeEventListener('click', startBg);
+        document.body.removeEventListener('touchstart', startBg);
+      }
+      document.body.addEventListener('click', startBg);
+      document.body.addEventListener('touchstart', startBg);
+    })();
+  </script>
+  <script>
+    (function() {
+      var btn = document.getElementById('tahir-gift-btn');
+      var reveal = document.getElementById('tahir-gift-reveal');
+      if (btn && reveal) {
+        btn.addEventListener('click', function() {
+          btn.hidden = true;
+          reveal.hidden = false;
+          var audio = new Audio('audio_tahir/gift.mp3');
+          audio.play().catch(function() {});
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
