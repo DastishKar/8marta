@@ -648,18 +648,19 @@
       }
       document.body.addEventListener('click', startBg);
       document.body.addEventListener('touchstart', startBg);
-    })();
-  </script>
-  <script>
-    (function() {
+
       var btn = document.getElementById('tahir-gift-btn');
       var reveal = document.getElementById('tahir-gift-reveal');
       if (btn && reveal) {
         btn.addEventListener('click', function() {
           btn.hidden = true;
           reveal.hidden = false;
+          bgMusic.pause();
           var audio = new Audio('audio_tahir/gift.mp3');
           audio.play().catch(function() {});
+          setTimeout(function() {
+            bgMusic.play().catch(function() {});
+          }, 10000);
         });
       }
     })();
